@@ -5,7 +5,7 @@ const AdmZip = require('adm-zip');
 
 const owner = 'niharkushwah';
 const repo = 'nestjs-graphql';
-const run_id = ;
+const run_id = 7058795068;
 const token = ''; // Replace with your actual token
 
 const apiUrl = `https://api.github.com/repos/${owner}/${repo}/actions/runs/${run_id}/logs`;
