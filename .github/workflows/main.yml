@@ -7,7 +7,9 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+    # You can specify the name of your self-hosted runner
+    # runs-on: [self-hosted, my-custom-runner]
 
     steps:
     - name: Checkout code
@@ -24,4 +26,9 @@ jobs:
     - name: Build
       run: |
         npm run build
-        
+
+    # Configure the runner to store logs locally
+    - name: Configure runner logs
+      run: |
+        mkdir -p $RUNNER_WORKSPACE/_logs
+        echo "::set-env name=ACTIONS_RUNNER_DEBUG_LOG_FILE::$RUNNER_WORKSPACE/_logs/runner.log"
