@@ -27,8 +27,7 @@ jobs:
       run: |
         npm run build
 
-    - name: Configure runner logs
+    - name: Save Runner Logs
       run: |
-          mkdir -p $RUNNER_WORKSPACE/_logs
-          echo "ACTIONS_RUNNER_DEBUG_LOG_FILE=${RUNNER_WORKSPACE}/_logs/runner.log" >> $GITHUB_ENV
-      
+        mkdir -p $RUNNER_WORKSPACE/_logs
+        mv /path/to/runner/runner.log $RUNNER_WORKSPACE/_logs/runner.log
