@@ -27,8 +27,7 @@ jobs:
       run: |
         npm run build
 
-    # Configure the runner to store logs locally
     - name: Configure runner logs
       run: |
         mkdir -p $RUNNER_WORKSPACE/_logs
-        echo "::set-env name=ACTIONS_RUNNER_DEBUG_LOG_FILE::$RUNNER_WORKSPACE/_logs/runner.log"
+        echo "ACTIONS_RUNNER_DEBUG_LOG_FILE=${RUNNER_WORKSPACE}/_logs/runner.log" >> $GITHUB_ENV
