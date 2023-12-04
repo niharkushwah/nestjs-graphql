@@ -29,5 +29,6 @@ jobs:
 
     - name: Configure runner logs
       run: |
-        mkdir -p $RUNNER_WORKSPACE/_logs
-        echo "ACTIONS_RUNNER_DEBUG_LOG_FILE=${RUNNER_WORKSPACE}/_logs/runner.log" >> $GITHUB_ENV
+          mkdir -p $RUNNER_WORKSPACE/_logs
+          echo "ACTIONS_RUNNER_DEBUG_LOG_FILE=${RUNNER_WORKSPACE}/_logs/runner.log" >> $GITHUB_ENV
+      
