@@ -15,8 +15,21 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Run Tests
+      run: npm test
+
+    - name: Build
+      run: npm run build
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
     - name: Create Logs Directory
       run: mkdir -p C:/Users/NIHAR/OneDrive/Desktop/actions-runner/_logs
-
+    
     - name: Save Runner Logs
       run: echo "This is a test log message" > C:/Users/NIHAR/OneDrive/Desktop/actions-runner/_logs/runner.log
+    
