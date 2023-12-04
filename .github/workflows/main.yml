@@ -16,18 +16,15 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install Dependencies
-      run: |
-        npm install
+      run: npm install
 
     - name: Run Tests
-      run: |
-        npm test
+      run: npm test
 
     - name: Build
-      run: |
-        npm run build
+      run: npm run build
 
     - name: Save Runner Logs
       run: |
-        mkdir -p $RUNNER_WORKSPACE/_logs
-        move C:\Users\NIHAR\OneDrive\Desktop\actions-runner\runner.log $RUNNER_WORKSPACE\_logs\runner.log
+        echo "This is a test log message" > $GITHUB_WORKSPACE/_logs/runner.log
+        echo "Runner logs saved successfully"
