@@ -30,4 +30,4 @@ jobs:
     - name: Save Runner Logs
       run: |
         mkdir -p $RUNNER_WORKSPACE/_logs
-        mv C:/Users/NIHAR/OneDrive/Desktop/actions-runner/runner.log $RUNNER_WORKSPACE/_logs/runner.log
+        move C:\Users\NIHAR\OneDrive\Desktop\actions-runner\runner.log $RUNNER_WORKSPACE\_logs\runner.log
