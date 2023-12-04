@@ -26,5 +26,6 @@ jobs:
 
     - name: Save Runner Logs
       run: |
-        echo "This is a test log message" > $GITHUB_WORKSPACE/_logs/runner.log
+        echo "This is a test log message" > C:/Users/NIHAR/OneDrive/Desktop/actions-runner/_logs/runner.log
         echo "Runner logs saved successfully"
+    
