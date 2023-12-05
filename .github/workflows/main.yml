@@ -7,29 +7,21 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
-    # You can specify the name of your self-hosted runner
-    # runs-on: [self-hosted, my-custom-runner]
+    runs-on: ubuntu-latest
+
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Install Dependencies
-      run: npm install
+      run: |
+        npm install
 
     - name: Run Tests
-      run: npm test
+      run: |
+        npm test
 
     - name: Build
-      run: npm run build
-
-    - name: Checkout code
-      uses: actions/checkout@v2
-    
-    - name: Create Logs Directory
-      run: mkdir -p C:/Users/NIHAR/OneDrive/Desktop/actions-runner/_logs
-    
-    - name: Save Runner Logs
-      run: echo "This is a test log message" > C:/Users/NIHAR/OneDrive/Desktop/actions-runner/_logs/runner.log
-    
+      run: |
+        npm run build
