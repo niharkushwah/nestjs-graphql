@@ -17,6 +17,9 @@ jobs:
           echo "Workflow started"
           echo "Event type: $GITHUB_EVENT_NAME"
           echo "Event payload: $GITHUB_EVENT_PATH"
+          echo "Event payload content:"
+          cat $GITHUB_EVENT_PATH
 
       - name: Checkout code
         uses: actions/checkout@v2
+    
