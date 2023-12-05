@@ -4,22 +4,31 @@ on:
   push:
     branches:
       - main
-
+      
   repository_dispatch:
     types: [stop_workflow]
       
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Debug Information
-        run: |
-          echo "Workflow started"
-          echo "Event type: $GITHUB_EVENT_NAME"
-          echo "Event payload: $GITHUB_EVENT_PATH"
-          echo "Event payload content:"
-          cat $GITHUB_EVENT_PATH
 
+    steps:
       - name: Checkout code
         uses: actions/checkout@v2
-    
+
+      - name: Install Dependencies
+        run: |
+          npm install
+
+      - name: Run Tests
+        run: |
+          npm test
+
+      - name: Build
+        run: |
+          npm run build
+
+      # Add a conditional step to stop the workflow
+      - name: Stop Workflow
+        if: github.event_name == 'repository_dispatch' && github.event.client_payload.event_type == 'stop_workflow'
+        run: echo "Workflow stopped"
