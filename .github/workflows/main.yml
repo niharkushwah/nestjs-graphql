@@ -1,33 +1,26 @@
 name: CI/CD
 
 on:
-  repository_dispatch:
-    types: [start_workflow]
+  push:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Install Dependencies
-        run: |
-          npm install
+    - name: Install Dependencies
+      run: |
+        npm install
 
-      - name: Run Tests
-        run: |
-          npm test
+    - name: Run Tests
+      run: |
+        npm test
 
-      - name: Build
-        run: |
-          npm run build
-
-      - name: Check State and Stop Workflow
-        run: |
-          state=$(cat .github/workflow_state.txt)
-          if [ "$state" == "stop" ]; then
-            echo "Workflow stopped."
-            exit 0
-          fi
+    - name: Build
+      run: |
+        npm run build
