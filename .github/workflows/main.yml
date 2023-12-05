@@ -4,26 +4,19 @@ on:
   push:
     branches:
       - main
-      
+
   repository_dispatch:
     types: [stop_workflow]
       
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Debug Information
+        run: |
+          echo "Workflow started"
+          echo "Event type: $GITHUB_EVENT_NAME"
+          echo "Event payload: $GITHUB_EVENT_PATH"
 
-    - name: Install Dependencies
-      run: |
-        npm install
-
-    - name: Run Tests
-      run: |
-        npm test
-
-    - name: Build
-      run: |
-        npm run build
+      - name: Checkout code
+        uses: actions/checkout@v2
