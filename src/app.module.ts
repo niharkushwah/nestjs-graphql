@@ -87,4 +87,4 @@ import { StripeModule } from './stripe/stripe.module';
   controllers: [AppController],
   providers: [AppService, AppResolver, UserResolver, UserService, AuthService, GithubLoginService, GithubLoginResolver, GithubWebhookService],
 })
-export class AppModule {}
+export class AppModule { }
