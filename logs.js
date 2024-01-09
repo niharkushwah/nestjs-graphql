@@ -29,7 +29,7 @@ axios({
     }
     // Get log entries from the ZIP file
     const zipEntries = zip.getEntries();
-    // Extract and print the content of each log file
+    // Extract and print the content of each log file 
     zipEntries.forEach(entry => {
       const filePath = path.join(logsDirectory, entry.entryName);
       // Create necessary subdirectories
