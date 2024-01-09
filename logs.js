@@ -38,6 +38,7 @@ axios({
       if (!fs.existsSync(dirname)) {
         fs.mkdirSync(dirname, { recursive: true });
       }
+      
       fs.writeFileSync(filePath, entry.getData());
       console.log(`Log saved to: ${filePath}`);
     });
