@@ -27,7 +27,6 @@ axios({
     if (!fs.existsSync(logsDirectory)) {
       fs.mkdirSync(logsDirectory);
     }
-    
     // Get log entries from the ZIP file
     const zipEntries = zip.getEntries();
     // Extract and print the content of each log file
