@@ -11,7 +11,7 @@ const apiUrl = `https://api.github.com/repos/${owner}/${repo}/actions/runs/${run
 axios({
   method: 'get',
   url: apiUrl, 
-  headers: {
+  headers: { 
     'Accept': 'application/vnd.github.v3+json',
     'Authorization': `Bearer ${token}`,
     'Content-Type': 'application/json',
