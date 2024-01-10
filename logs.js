@@ -15,7 +15,7 @@ axios({
     'Accept': 'application/vnd.github.v3+json',
     'Authorization': `Bearer ${token}`,
     'Content-Type': 'application/json',
-  },
+  }, 
   responseType: 'arraybuffer', // Specify the response type as arraybuffer
 })
   .then(response => {
