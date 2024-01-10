@@ -39,7 +39,7 @@ axios({
       fs.writeFileSync(filePath, entry.getData());
       console.log(`Log saved to: ${filePath}`);
     });
-  }) 
+  })
   .catch(error => {
     console.error(`Error: ${error.message}`);
     console.log(error);
