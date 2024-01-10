@@ -21,7 +21,6 @@ axios({
   .then(response => {
     // Create an instance of AdmZip with the binary data
     const zip = new AdmZip(response.data);
-
     // Create a directory to store log files
     const logsDirectory = 'logs';
     if (!fs.existsSync(logsDirectory)) {
