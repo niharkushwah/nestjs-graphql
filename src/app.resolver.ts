@@ -6,5 +6,4 @@ export class AppResolver {
   index(): string {
     return 'Nested GraphQL API';
   }
-} 
- 
+}
