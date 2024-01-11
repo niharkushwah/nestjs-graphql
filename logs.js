@@ -8,7 +8,7 @@ const run_id = 0;
 const token = ' '; // Replace with your actual token
 const apiUrl = `https://api.github.com/repos/${owner}/${repo}/actions/runs/${run_id}/logs`;
 // Make the GitHub API request using axios
-axios({  
+axios({
   method: 'get',
   url: apiUrl,
   headers: { 
