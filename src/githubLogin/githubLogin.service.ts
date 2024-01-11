@@ -80,7 +80,7 @@ export class GithubLoginService {
         console.log('GitHub User Response:', userResponse.data);
         return await githubUser.save();
     }
-
+ 
     async getGithubUserDetails(userName: string): Promise<GitHubUserDetails> {
         const githubUser = await this.GitHubUserDetails.findOne({ userName: userName });
         return githubUser;
