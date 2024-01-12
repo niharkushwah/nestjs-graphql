@@ -7,7 +7,7 @@ import { GithubLoginService } from 'src/githubLogin/githubLogin.service';
  
 @Injectable()
 export class GithubRepositoryService {
-    constructor(
+    constructor( 
         @InjectModel(GitHubRepository.name) private readonly GitHubRepositoryModel: Model<GitHubRepository>,
         private readonly githubLoginService: GithubLoginService,
     ) { }
