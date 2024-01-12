@@ -5,7 +5,7 @@ import { GitHubRepository, RepositoryType } from './githubRepository.schema';
 import axios from 'axios'; 
 import { GithubLoginService } from 'src/githubLogin/githubLogin.service'; 
  
-@Injectable() 
+@Injectable()  
 export class GithubRepositoryService {
     constructor( 
         @InjectModel(GitHubRepository.name) private readonly GitHubRepositoryModel: Model<GitHubRepository>,
