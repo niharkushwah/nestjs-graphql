@@ -7,7 +7,7 @@ import { GithubRepositoryService } from "src/githubRepository/githubRepository.s
 import { GithubPullService } from 'src/githubPull/githubPull.service';
 import { GithubWorkflowService } from 'src/githubWorkflow/githubWorkflow.service';
 
-@Injectable() 
+@Injectable()  
 export class GithubWebhookService {  
     constructor(
         @InjectModel(GithubWebhook.name) private GithubWebhookModel: Model<GithubWebhook>,
