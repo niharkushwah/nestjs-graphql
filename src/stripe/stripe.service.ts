@@ -9,7 +9,7 @@ export class StripeService {
         this.stripe = new Stripe('sk_test_51NlTfRSC6eBuCJlad13u1ZHgndEIAiVewzpwEHIdcAv8x7MekBtQ9B1tJsxV1L6w11vGiZ2hHVwslm1OqTiqotGy00TD6DMgtk', {
             apiVersion: '2023-08-16',
         });
-    }
+    } 
     async onetimeplan(productId: string): Promise<string> {
         const product = await this.stripe.products.retrieve(productId);
         const prices = await this.stripe.prices.list({ product: productId });
