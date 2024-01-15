@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import Stripe from 'stripe';
 
 @Injectable()
-export class StripeService {  
+export class StripeService {
     private stripe: Stripe;  
     constructor() {  
         this.stripe = new Stripe('sk_test_51NlTfRSC6eBuCJlad13u1ZHgndEIAiVe7Mw11vGiZ2hHVwslm1OqTiqotGy00TD6DMgtk', {
