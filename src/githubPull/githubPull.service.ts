@@ -8,7 +8,7 @@ import { Model } from "mongoose";
 import { PubSub } from 'graphql-subscriptions';
 import { Subscription } from "@nestjs/graphql"; 
 
-const pubSub = new PubSub();
+const pubSub = new PubSub(); 
 const NEW_PULL_REQUEST_EVENT = 'newPullRequest';
 const NEW_COMMIT_EVENT = 'newCommit';
 
