@@ -5,7 +5,7 @@ import { GithubPullService } from "./githubPull.service";
 @Resolver(() => GitHubPull)  
 export class GithubPullResolver { 
   constructor(private readonly githubPullService: GithubPullService) { }
-  @Mutation(() => [GitHubPull])
+  @Mutation(() => [GitHubPull]) 
   async createPullRequests(@Args("userName") userName: string, @Args("repoName") repoName: string): Promise<GitHubPull[]> {
     const pullRequests = await this.githubPullService.createPullRequests(userName, repoName);
     return pullRequests;
