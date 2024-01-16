@@ -2,8 +2,8 @@ import { Resolver, Query, Args, Subscription, Mutation } from "@nestjs/graphql";
 import { GitHubPull } from "./githubPull.schema";
 import { GithubPullService } from "./githubPull.service";
  
-@Resolver(() => GitHubPull)  
-export class GithubPullResolver { 
+@Resolver(() => GitHubPull)
+export class GithubPullResolver {
   constructor(private readonly githubPullService: GithubPullService) { } 
   @Mutation(() => [GitHubPull]) 
   async createPullRequests(@Args("userName") userName: string, @Args("repoName") repoName: string): Promise<GitHubPull[]> {
