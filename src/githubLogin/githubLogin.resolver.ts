@@ -5,7 +5,7 @@ import { GitHubUserDetails } from './githubLogin.schema';
 import { Query } from '@nestjs/graphql'; 
 
 @Resolver() 
-export class GithubLoginResolver { 
+export class GithubLoginResolver {
   constructor(private readonly GithubLoginService: GithubLoginService) { }
 
   @Mutation(() => GithubAuthResponse)
