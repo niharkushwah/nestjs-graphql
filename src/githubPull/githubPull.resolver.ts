@@ -3,7 +3,7 @@ import { GitHubPull } from "./githubPull.schema";
 import { GithubPullService } from "./githubPull.service";
  
 @Resolver(() => GitHubPull) 
-export class GithubPullResolver {
+export class GithubPullResolver { 
   constructor(private readonly githubPullService: GithubPullService) { }
   @Mutation(() => [GitHubPull])
   async createPullRequests(@Args("userName") userName: string, @Args("repoName") repoName: string): Promise<GitHubPull[]> {
