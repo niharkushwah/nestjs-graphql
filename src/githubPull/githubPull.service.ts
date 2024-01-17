@@ -4,7 +4,7 @@ import axios from "axios";
 import { GitHubPull } from "./githubPull.schema";
 import { GithubRepositoryService } from "src/githubRepository/githubRepository.service";
 import { InjectModel } from "@nestjs/mongoose";
-import { Model } from "mongoose";
+import { Model } from "mongoose"; 
 import { PubSub } from 'graphql-subscriptions'; 
 import { Subscription } from "@nestjs/graphql";    
 
