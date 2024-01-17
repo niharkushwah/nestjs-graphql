@@ -11,7 +11,6 @@ import { Subscription } from "@nestjs/graphql";
 const pubSub = new PubSub(); 
 const NEW_PULL_REQUEST_EVENT = 'newPullRequest';
 const NEW_COMMIT_EVENT = 'newCommit';
-
 @Injectable()
 export class GithubPullService {
   constructor(
