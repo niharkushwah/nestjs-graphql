@@ -6,8 +6,7 @@ import { User } from "src/user/user.schema";
 import { InjectModel } from "@nestjs/mongoose"; 
 import { Author } from "./book.schema";
 
-
-@Injectable() 
+@Injectable()
 export class BookService {
   constructor( 
     @InjectModel('Book') private readonly bookModel: Model<Book>,
