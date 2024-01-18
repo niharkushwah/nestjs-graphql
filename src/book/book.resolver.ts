@@ -2,7 +2,6 @@ import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { Author, Book, BookInput } from './book.schema';
 import { BookService } from './book.service';
 import { Types } from 'mongoose'; 
-
 @Resolver(() => Book)
 export class BookResolver { 
   constructor(private readonly bookService: BookService) { }
