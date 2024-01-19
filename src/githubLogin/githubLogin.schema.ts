@@ -7,7 +7,7 @@ import { GraphQLJSONObject } from 'graphql-type-json';
 @Schema()
 export class GitHubUserDetails extends Document {
   @Field(() => ID)
-  _id: string;
+  _id: string; 
 
   @Field(() => String, { nullable: true })
   @Prop()
