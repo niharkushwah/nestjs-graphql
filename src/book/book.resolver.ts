@@ -5,7 +5,7 @@ import { Types } from 'mongoose';
 @Resolver(() => Book) 
 export class BookResolver {
   constructor(private readonly bookService: BookService) { }
-
+ 
   @Mutation(() => Book)
   async createBook(
     @Args('title') title: string,
