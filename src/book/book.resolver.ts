@@ -3,7 +3,7 @@ import { Author, Book, BookInput } from './book.schema';
 import { BookService } from './book.service';
 import { Types } from 'mongoose'; 
 @Resolver(() => Book) 
-export class BookResolver {
+export class BookResolver { 
   constructor(private readonly bookService: BookService) { }
  
   @Mutation(() => Book)
