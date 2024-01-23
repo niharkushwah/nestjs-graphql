@@ -6,7 +6,7 @@ import { jwtConstants } from './constants';
 import { AuthService } from './auth.service';
 import { JwtStrategy } from './jwt.strategy';
 import { UserModule } from 'src/user/user.modul';
-import { TokenModule } from 'src/token/token.module';
+import { TokenModule } from 'src/token/token.module'; 
 
 @Module({
   imports: [
