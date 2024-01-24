@@ -4,7 +4,7 @@ import { GithubPullResolver } from './githubPull.resolver';
 import { GitHubPullSchema } from './githubPull.schema';
 import { MongooseModule } from '@nestjs/mongoose';
 import { GithubLoginModule } from 'src/githubLogin/githubLogin.module';
-import { GithubRepositoryModule } from 'src/githubRepository/githubRepository.module';
+import { GithubRepositoryModule } from 'src/githubRepository/githubRepository.module'; 
 
 @Module({
   imports: [
