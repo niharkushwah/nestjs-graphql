@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { GithubPullService } from './githubPull.service';
-import { GithubPullResolver } from './githubPull.resolver';
+import { GithubPullResolver } from './githubPull.resolver'; 
 import { GitHubPullSchema } from './githubPull.schema';
 import { MongooseModule } from '@nestjs/mongoose'; 
 import { GithubLoginModule } from 'src/githubLogin/githubLogin.module';
