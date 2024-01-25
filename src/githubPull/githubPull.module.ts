@@ -6,7 +6,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { GithubLoginModule } from 'src/githubLogin/githubLogin.module';
 import { GithubRepositoryModule } from 'src/githubRepository/githubRepository.module';
  
-@Module({
+@Module({ 
   imports: [
     MongooseModule.forFeature([{ name: 'GitHubPull', schema: GitHubPullSchema }]), GithubLoginModule, GithubRepositoryModule],
   providers: [GithubPullService, GithubPullResolver],
