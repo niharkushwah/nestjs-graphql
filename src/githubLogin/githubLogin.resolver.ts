@@ -3,7 +3,7 @@ import { GithubLoginService } from './githubLogin.service';
 import { GithubAuthResponse, AccessTokenResponse } from 'src/user/user.schema';
 import { GitHubUserDetails } from './githubLogin.schema';
 import { Query } from '@nestjs/graphql';
- 
+
 @Resolver()
 export class GithubLoginResolver {
   constructor(private readonly GithubLoginService: GithubLoginService) { }
