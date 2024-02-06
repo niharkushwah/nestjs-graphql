@@ -6,7 +6,7 @@ import * as bcrypt from 'bcrypt';
 import { TokenService } from 'src/token/token.service';
 
 @Injectable()
-export class AuthService {
+export class AuthService { 
   constructor(
     private readonly userService: UserService,
     private readonly jwtService: JwtService,
