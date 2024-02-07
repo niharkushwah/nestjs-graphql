@@ -3,7 +3,7 @@ import { AuthService } from './auth.service';
 
 @Resolver()  
 export class AuthResolver { 
-  constructor(private readonly authService: AuthService) { }
+  constructor(private readonly authService: AuthService) {}
 
   @Mutation(() => String)
   async login(@Args('email') email: string, @Args('password') password: string) {
