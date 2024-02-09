@@ -1,4 +1,4 @@
-import { Types } from 'mongoose'; 
+import { Types } from 'mongoose';
 import { Injectable } from "@nestjs/common";
 import { Model } from "mongoose";
 import { Book, BookInput, NewAuthors } from "./book.schema";
