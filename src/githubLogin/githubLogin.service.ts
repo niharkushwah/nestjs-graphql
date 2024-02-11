@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common'; 
+import { Injectable } from '@nestjs/common';
 import axios from 'axios';
 import { AccessTokenResponse } from 'src/user/user.schema';
 import { GitHubUserDetails } from './githubLogin.schema';
