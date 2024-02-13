@@ -1,6 +1,6 @@
 import mongoose, { Model } from 'mongoose';
 import { Injectable } from '@nestjs/common';
-import { InjectModel } from '@nestjs/mongoose';
+import { InjectModel } from '@nestjs/mongoose'; 
 import { GitHubRepository, RepositoryType } from './githubRepository.schema';
 import axios from 'axios';
 import { GithubLoginService } from 'src/githubLogin/githubLogin.service';
