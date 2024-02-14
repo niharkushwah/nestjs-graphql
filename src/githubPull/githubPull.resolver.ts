@@ -1,6 +1,6 @@
 import { Resolver, Query, Args, Subscription, Mutation } from "@nestjs/graphql";
 import { GitHubPull } from "./githubPull.schema";
-import { GithubPullService } from "./githubPull.service"; 
+import { GithubPullService } from "./githubPull.service";
 
 @Resolver(() => GitHubPull) 
 export class GithubPullResolver { 
