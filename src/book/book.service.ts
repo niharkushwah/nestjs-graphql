@@ -1,10 +1,10 @@
 import { Types } from 'mongoose';
-import { Injectable } from "@nestjs/common"; 
-import { Model } from "mongoose"; 
+import { Injectable } from "@nestjs/common";
+import { Model } from "mongoose";
 import { Book, BookInput, NewAuthors } from "./book.schema";
 import { User } from "src/user/user.schema";
 import { InjectModel } from "@nestjs/mongoose";
-import { Author } from "./book.schema"; 
+import { Author } from "./book.schema";
 
 @Injectable()
 export class BookService {
