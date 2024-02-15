@@ -1,4 +1,4 @@
-import mongoose, { Model } from 'mongoose'; 
+import mongoose, { Model } from 'mongoose';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { GitHubRepository, RepositoryType } from './githubRepository.schema';
