@@ -2,7 +2,7 @@ import { Resolver, Query, Args } from '@nestjs/graphql';
 import { GitHubUserOrganization } from './githubUserOrganization.schema';
 import { GithubUserOrganizationService } from './githubUserOrganization.service';
 
-@Resolver()
+@Resolver() 
 export class GithubUserOrganizationResolver {
     constructor(private readonly githubUserOrganizationService: GithubUserOrganizationService) {}
 
