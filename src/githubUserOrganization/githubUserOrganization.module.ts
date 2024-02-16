@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module } from '@nestjs/common'; 
 import { MongooseModule } from '@nestjs/mongoose';
 import { GitHubUserOrganization, GitHubUserOrganizationSchema } from './githubUserOrganization.schema';
 import { GithubUserOrganizationService } from './githubUserOrganization.service';
@@ -12,4 +12,4 @@ import { GithubLoginModule } from 'src/githubLogin/githubLogin.module';
   exports: [GithubUserOrganizationService],
 })
 
-export class GithubUserOrganizationModule { }
+export class GithubUserOrganizationModule {}
