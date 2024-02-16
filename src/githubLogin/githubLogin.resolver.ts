@@ -1,4 +1,4 @@
-import { Resolver, Mutation, Args } from '@nestjs/graphql';
+import { Resolver, Mutation, Args } from '@nestjs/graphql'; 
 import { GithubLoginService } from './githubLogin.service';
 import { GithubAuthResponse, AccessTokenResponse } from 'src/user/user.schema';
 import { GitHubUserDetails } from './githubLogin.schema'; 
