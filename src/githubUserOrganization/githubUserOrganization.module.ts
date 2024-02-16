@@ -12,4 +12,4 @@ import { GithubLoginModule } from 'src/githubLogin/githubLogin.module';
   exports: [GithubUserOrganizationService],
 })
 
-export class GithubUserOrganizationModule { }
+export class GithubUserOrganizationModule {}
