@@ -1,5 +1,5 @@
 import { Field, ID, ObjectType, registerEnumType } from '@nestjs/graphql';
-import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';  
 import { GraphQLJSONObject } from 'graphql-type-json';
 import mongoose, { Document } from 'mongoose';
 
