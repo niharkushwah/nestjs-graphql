@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common'; 
+import { Module } from '@nestjs/common';
 import { GithubPullService } from './githubPull.service';
 import { GithubPullResolver } from './githubPull.resolver'; 
 import { GitHubPullSchema } from './githubPull.schema'; 
