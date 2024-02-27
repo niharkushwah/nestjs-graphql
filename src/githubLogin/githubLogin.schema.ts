@@ -1,4 +1,4 @@
-import { Field, ID, ObjectType, Scalar } from '@nestjs/graphql';
+import { Field, ID, ObjectType, Scalar } from '@nestjs/graphql'; 
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'; 
 import { Document } from 'mongoose'; 
 import { GraphQLJSONObject } from 'graphql-type-json';
