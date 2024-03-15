@@ -1,5 +1,5 @@
 import { ObjectType, Field, Int, InputType, ID } from '@nestjs/graphql';
-import { Prop, SchemaFactory } from '@nestjs/mongoose'; 
+import { Prop, SchemaFactory } from '@nestjs/mongoose';
 import { Types } from 'mongoose';
 import { Schema } from '@nestjs/mongoose';
 import { User, UserInput } from 'src/user/user.schema';
