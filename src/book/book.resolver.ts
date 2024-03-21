@@ -1,4 +1,4 @@
-import { Args, Mutation, Query, Resolver } from '@nestjs/graphql'; 
+import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { Author, Book, BookInput } from './book.schema';
 import { BookService } from './book.service';
 import { Types } from 'mongoose';
