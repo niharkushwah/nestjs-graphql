@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common'; 
+import { Module } from '@nestjs/common';  
 import { GithubLoginService } from './githubLogin.service';
 import { GithubLoginResolver } from './githubLogin.resolver'; 
 import { MongooseModule } from '@nestjs/mongoose';
